@@ -23,7 +23,7 @@ A full-stack real-time chat application built with Node.js, Express, and Socket.
 
 - **Docker containerization** for easy deploymen
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **Backend**: Node.js, Express.js, Socket.IO
 - **Frontend**: HTML5, Tailwind CSS, Vanilla JavaScript
