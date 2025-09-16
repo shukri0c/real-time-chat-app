@@ -2,10 +2,10 @@
 
 A full-stack real-time chat application built with Node.js, Express, and Socket.IO, featuring instant messaging, typing indicators, and interactive commands.
 
-![Main Chat Interface](screenshots/main-chat.png)
-![Typing Indicator](screenshots/typing-indicator.png)
-![Commands Demo](screenshots/commands-demo.png) 
-(screenshots/command-demo-otheruser.png)
+[![Main Chat Interface](screenshots/main-chat.png)](screenshots/main-chat.png)
+[![Typing Indicator](screenshots/typing-indicator.png)](screenshots/typing-indicator.png)
+[![Commands Demo](screenshots/command-demo.png)](screenshots/command-demo.png)
+
 
 ## Current features
 
