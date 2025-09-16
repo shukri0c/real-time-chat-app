@@ -14,7 +14,11 @@ io.on('connection', function(socket){
     console.log('made socket connection', socket.id);
 
     socket.on('chat', function(data){
-        io.socket.emnit('chat', data);
+        io.emit('chat', data);
     });
-      
+
+    socket.on('typing', function(data){
+        socket.broadcast.emit('typing', data);
+    });
+
 });
