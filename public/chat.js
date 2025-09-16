@@ -6,6 +6,8 @@ var btn = document.getElementById('send');
 var output = document.getElementById('output');
 var feedback = document.getElementById('feedback');
 
+var typing = false;
+var timeout;
 
 btn.addEventListener('click', function(){
     if (message.value.trim() === '') {
@@ -43,11 +45,20 @@ function stopTyping() {
 
 socket.on('chat', function(data){
     feedback.innerHTML = '';
-    output.innerHTML += '<div class="py-3 border-b border-gray-200 last:border-b-0"><p><strong>' + data.handle + ': </strong>' + data.message + '</p></div>';
+    
+   
+    if (data.handle === 'System Bot') {
+        output.innerHTML += '<div class="py-3 border-b border-gray-200 last:border-b-0"><p class="text-blue-600 italic"><strong>' + data.handle + ': </strong>' + data.message + '</p></div>';
+    } else {
+        output.innerHTML += '<div class="py-3 border-b border-gray-200 last:border-b-0"><p><strong>' + data.handle + ': </strong>' + data.message + '</p></div>';
+    }
+    
+    
+    output.scrollTop = output.scrollHeight;
 });
 
 socket.on('typing', function(data){
-    feedback.innerHTML = '<p><em>' + data + ' is typing a message...</em></p>';
+    feedback.innerHTML = '<p class="text-gray-500 italic"><em>' + data + ' is typing a message...</em></p>';
 });
 
 socket.on('stopTyping', function(){
