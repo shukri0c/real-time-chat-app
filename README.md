@@ -21,7 +21,7 @@ A full-stack real-time chat application built with Node.js, Express, and Socket.
 
 ## Expected features
 
-- **Docker containerization** for easy deploymen
+- **Docker containerization** for easy deployment
 
 ## Tech Stack
 
