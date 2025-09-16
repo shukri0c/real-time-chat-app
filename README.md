@@ -31,18 +31,18 @@ A full-stack real-time chat application built with Node.js, Express, and Socket.
 
 ### Installation
 1. Clone the repository:
-   '''
+   ```
    git clone https://github.com/your-username/real-time-chat-app.git
 cd real-time-chat-app
-   '''
+   ```
 2. Install dependencies:
-   '''
+   ```
    npm install
-   '''
+   ```
 3. Start the development server:
-   '''
+   ```
    npm run dev
-   '''
+   ```
 4. Open your browser and navigate to http://localhost:3000
 
 
