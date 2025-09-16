@@ -43,7 +43,7 @@ function stopTyping() {
 
 socket.on('chat', function(data){
     feedback.innerHTML = '';
-    output.innerHTML += '<p><strong>' + data.handle + ': </strong>' + data.message + '</p>';
+    output.innerHTML += '<div class="py-3 border-b border-gray-200 last:border-b-0"><p><strong>' + data.handle + ': </strong>' + data.message + '</p></div>';
 });
 
 socket.on('typing', function(data){
