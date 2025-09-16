@@ -8,6 +8,10 @@ var feedback = document.getElementById('feedback');
 
 
 btn.addEventListener('click', function(){
+    if (message.value.trim() === '') {
+        return; 
+    }
+
     socket.emit('chat', {
         message: message.value,
         handle: handle.value
